@@ -5,11 +5,11 @@ import Product from "../components/Product";
 const HomeScreen = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    const fetchProduct = async () => {
+    const fetchProducts = async () => {
       const res = await axios.get("/api/products");
       setProducts(res.data);
     };
-    fetchProduct();
+    fetchProducts();
   }, []);
   return (
     <>

@@ -1,20 +1,20 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import {
-  Row,
-  Col,
-  Image,
-  ListGroup,
-  Card,
-  Button,
-  ListGroupItem,
-} from "react-bootstrap";
-import products from "../products";
+import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 import Rating from "../components/Rating";
 
-const ProductScreen = () => {
+const ProductScreen = ({ match }) => {
+  const [product, setProduct] = useState({});
   const { id } = useParams();
-  const product = products.find((p) => p._id === id);
-  console.log(product);
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const res = await axios.get(`/api/products/${id}`);
+      setProduct(res.data);
+    };
+    fetchProduct();
+  }, []);
+
   return (
     <>
       <Link className="btn btn-dark" to="/">
@@ -22,7 +22,12 @@ const ProductScreen = () => {
       </Link>
       <Row>
         <Col md={6} className="mt-4">
-          <Image src={product.image} alt={product.name} fluid />
+          <Image
+            src={product.image}
+            alt={product.name}
+            fluid
+            style={{ height: "60vh", width: "50vw", objectFit: "cover" }}
+          />
         </Col>
         <Col md={3} className="mt-4">
           <ListGroup variant="flush">
