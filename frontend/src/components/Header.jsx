@@ -16,7 +16,7 @@ const Header = () => {
                   cursor: "pointer",
                 }}
               >
-                Medbee Store
+                Vaccine Store
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
             </div>

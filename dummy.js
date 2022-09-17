@@ -1,6 +1,5 @@
 // const products = [
 //   {
-//     _id: "1",
 //     name: "Covaxin",
 //     image: "/images/Covaxin.jpg",
 //     description:
@@ -13,7 +12,6 @@
 //     numReviews: 12,
 //   },
 //   {
-//     _id: "2",
 //     name: "Pfizer Vaccine",
 //     image: "/images/Pfizer.jpg",
 //     description:
@@ -26,7 +24,6 @@
 //     numReviews: 8,
 //   },
 //   {
-//     _id: "3",
 //     name: "COVID-19",
 //     image: "/images/COVID-19.jpg",
 //     description:
@@ -39,7 +36,6 @@
 //     numReviews: 12,
 //   },
 //   {
-//     _id: "4",
 //     name: "COVISHIELD ",
 //     image: "/images/COVISHIELD.jpg",
 //     description:
@@ -52,7 +48,6 @@
 //     numReviews: 12,
 //   },
 //   {
-//     _id: "5",
 //     name: "SARS-CoV-2",
 //     image: "/images/SARS-CoV-2.jpg",
 //     description:
@@ -65,7 +60,6 @@
 //     numReviews: 10,
 //   },
 //   {
-//     _id: "6",
 //     name: "Moderna COVID-19",
 //     image: "/images/Moderna.jpg",
 //     description:
