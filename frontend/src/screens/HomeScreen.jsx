@@ -12,7 +12,7 @@ const HomeScreen = () => {
     fetchProducts();
   }, []);
   return (
-    <>
+    <div className="HomeScreen" style={{ width: "100%" }}>
       <h3>Latest Medicine</h3>
       <Row>
         {products.map((product) => (
@@ -21,7 +21,7 @@ const HomeScreen = () => {
           </Col>
         ))}
       </Row>
-    </>
+    </div>
   );
 };
 

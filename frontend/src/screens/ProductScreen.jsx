@@ -41,7 +41,16 @@ const ProductScreen = ({ match }) => {
               />
             </ListGroup.Item>
             <ListGroup.Item>Description: {product.description}</ListGroup.Item>
-            <ListGroup.Item>Price: ₹{product.price}</ListGroup.Item>
+            <ListGroup.Item
+              style={{
+                color: "tomato",
+                fontSize: "20px",
+                fontWeight: "600",
+                marginTop: "10px",
+              }}
+            >
+              Price: ₹{product.price}
+            </ListGroup.Item>
           </ListGroup>
         </Col>
         <Col md={3}>
@@ -51,7 +60,9 @@ const ProductScreen = ({ match }) => {
                 <Row>
                   <Col>Price:</Col>
                   <Col>
-                    <strong>₹ {product.price}</strong>
+                    <strong style={{ color: "#354b66", fontSize: "22px" }}>
+                      ₹ {product.price}
+                    </strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
