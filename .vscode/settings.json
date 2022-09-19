@@ -1,0 +1,9 @@
+{
+  "editor.fontSize": 27,
+  "files.autoSave": "onFocusChange",
+  "scm.inputFontSize": 18,
+  "debug.console.fontSize": 18,
+  "markdown.preview.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
+  "tailwindCSS.rootFontSize": 18
+}
